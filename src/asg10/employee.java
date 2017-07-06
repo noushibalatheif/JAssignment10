@@ -6,23 +6,21 @@ public class employee
 	String designation;
 	String gender;
 	int age;
-	int pf;
-	int gratuity;
+	int fine;
 	int salary;
-	public employee(String name,String designation,String gender,int age,int pf,int gratuity,int salary)
+	public employee(String name,String designation,String gender,int age,int fine, int salary)
 	{
 		this.name=name;
 		this.designation=designation;
 		this.gender=gender;
 		this.age=age;
-		this.pf=pf;
-		this.gratuity=gratuity;
+		this.fine=fine;
 		this.salary=salary;
 	}
 	
 	public int calculatesalary()
 	{
-		return(salary-(pf+gratuity));
+		return (salary-fine);
 	}
 	
 	void display()
